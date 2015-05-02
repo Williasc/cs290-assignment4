@@ -74,17 +74,12 @@ echo "</tr>";
 
 //populate the rest of the table data
 for ($i = 1; $i < count($hArray); $i++){
+    echo "<tr><td>" . $hArray[$i] . "</td>";
     for ($j = 1; $j < count($wArray); $j++){
-        echo "<tr>";
-        if ($i == 1){
-            echo "<td>" . $hArray($j) . "</td>";
-        }
-        else{
-            $tmp = $hArray($i) * $wArray($j);
-            echo "<td>" . $tmp . "</td>";
-        }
-        echo "</tr>";
+        $tmp = $hArray[$i] * $wArray[$j];
+        echo "<td>" . $tmp . "</td>";
     }
+    echo "</tr>";
 }
 echo "</table>
 </body>
