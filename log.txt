@@ -1,0 +1,15 @@
+Start: Fri, 1 May 2015 10:30:00 -0700
+End: Fri, 1 May 2015 12:15:00 -0700
+Tasks: Still working on figuring out how PHP works, mostly just messing with things
+
+Start: Fri, 1 May 2015 13:00:00 -0700
+End: Fri, 1 May 2015 17:10:00 -0700
+Tasks: Finished multtable.php
+
+Start: Sat, 2 May 2015 8:30:00 -0700
+End: Sat, 2 May 2015 13:00:00 -0700
+Tasks: Finished loopback.php
+
+Start: Sat, 2 May 2015 14:15:00 -0700
+End: Sat, 2 May 2015 17:30:00 -0700
+Tasks: Finished the rest of the project
