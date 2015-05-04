@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
 echo '<!DOCTYPE html>
 <html lang="en">
@@ -10,21 +8,22 @@ echo '<!DOCTYPE html>
     </head>
     <body>';
     
-    
+//taken from week 5 source code on how to create the appropriate URL
+//for each page's navigation
 $filePath = explode('/', $_SERVER['PHP_SELF'], -1);
 $filePath = implode('/',$filePath);
 $login = "http://" . $_SERVER['HTTP_HOST'] . $filePath . "/login.php";
 $logout = "http://" . $_SERVER['HTTP_HOST'] . $filePath . "/login.php?action=logout";
 $content2 = "http://" . $_SERVER['HTTP_HOST'] . $filePath . "/content2.php";
 
-    
-if($_POST['username'] == NULL){
+if($_POST['username'] == NULL && $_SESSION['username'] == NULL){
     echo "You must login to view this page.<br>";
     echo "click <a href='" . $login . "'>here</a> to return to the login";
 }
 else{
     session_start();
 }
+
 
 if(session_status() == PHP_SESSION_ACTIVE){
     if(isset($_POST['username'])){
